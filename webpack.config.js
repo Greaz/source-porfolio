@@ -22,6 +22,13 @@ module.exports = {
           presets: ["es2015"]
         },
       },
+      {
+        test: /\.s?css$/,
+        include: [
+          path.resolve(__dirname, "app")
+        ],
+        loaders: ["style-loader", "css-loader", "sass-loader"],
+      },
     ],
   },
 
@@ -32,9 +39,6 @@ module.exports = {
       path.resolve(__dirname, "app")
     ],
     // directories where to look for modules
-
-    extensions: [".js", ".json", ".jsx", ".css"],
-    // extensions that are used
   },
 
   devtool: "source-map",
