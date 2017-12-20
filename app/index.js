@@ -1,2 +1,8 @@
 import "index.scss"
-console.log("hello world 6");
+import React from "react"
+import ReactDOM from "react-dom"
+
+ReactDOM.render(
+    <h1>lolilol</h1>,
+    document.body
+  );
