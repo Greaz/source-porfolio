@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: "./app/index.js", 
@@ -6,7 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "/",
+    publicPath: "./",
   },
 
   module: {
@@ -48,4 +49,5 @@ module.exports = {
     hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
     noInfo: true, // only errors & warns on hot reload
   },
+  plugins: [new HtmlWebpackPlugin()]
 }
