@@ -43,7 +43,7 @@ module.exports = {
   target: "web",
 
   devServer: {
-    contentBase: path.join(__dirname, 'public'), // boolean | string | array, static file location
+    contentBase: path.join(__dirname, 'dist'), // boolean | string | array, static file location
     compress: true, // enable gzip compression
     historyApiFallback: true, // true for index.html upon 404, object for multiple paths
     hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
