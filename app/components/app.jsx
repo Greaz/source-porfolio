@@ -1,14 +1,13 @@
 import React from "react"
-
 import Navigation from "components/navigation.jsx"
-import Homepage from "components/homepage.jsx"
+import Content from "components/content.jsx"
 
 export class App extends React.Component {
   render() {
     return (
       <div>
-          <Navigation/>
-          <Homepage/>
+        <Navigation/>
+        <Content/>
       </div>
     );
   }
