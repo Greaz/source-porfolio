@@ -5,7 +5,9 @@ export class Auchandirect extends React.Component {
   render() {
     return (
       <div>
-        <Header/>
+        <Header
+          text="Stop Bullshit, start good shit. Allow users to do their food shopping of the month in less than 20 minutes"
+        />
         <h2> Page auchandirect </h2>
       </div>
     );

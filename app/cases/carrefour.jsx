@@ -5,7 +5,7 @@ export class Carrefour extends React.Component {
   render() {
     return (
         <div>
-          <Header/>
+          <Header text="coming soon"/>
           <h2> Page carrefour </h2>
         </div>
     );
