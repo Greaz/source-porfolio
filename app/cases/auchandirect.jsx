@@ -1,9 +1,13 @@
 import React from "react"
+import Header from "components/header.jsx"
 
 export class Auchandirect extends React.Component {
   render() {
     return (
-        <h3> Page auchandirect </h3>
+      <div>
+        <Header/>
+        <h2> Page auchandirect </h2>
+      </div>
     );
   }
 }

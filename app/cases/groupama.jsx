@@ -1,9 +1,13 @@
 import React from "react"
+import Header from "components/header.jsx"
 
 export class Groupama extends React.Component {
   render() {
     return (
-        <h3> Page groupama </h3>
+        <div>
+          <Header/>
+          <h2> Page groupama </h2>
+        </div>
     );
   }
 }

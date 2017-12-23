@@ -1,9 +1,13 @@
 import React from "react"
+import Header from "components/header.jsx"
 
 export class Planetvo extends React.Component {
   render() {
     return (
-        <h3> Page planetvo </h3>
+        <div>
+          <Header/>
+          <h2> Page planetvo </h2>
+        </div>
     );
   }
 }

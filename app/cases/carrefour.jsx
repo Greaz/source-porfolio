@@ -1,9 +1,13 @@
 import React from "react"
+import Header from "components/header.jsx"
 
 export class Carrefour extends React.Component {
   render() {
     return (
-        <h3> Page carrefour </h3>
+        <div>
+          <Header/>
+          <h2> Page carrefour </h2>
+        </div>
     );
   }
 }
