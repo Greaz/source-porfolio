@@ -1,13 +1,13 @@
 import React from "react"
 import { Switch, Route } from 'react-router-dom'
 
-import Homepage from "components/homepage.jsx"
-import About from "components/about.jsx"
+import Homepage from "homepage.jsx"
+import About from "about.jsx"
 
-import AuchanDirect from "components/cases/auchandirect.jsx"
-import Carrefour from "components/cases/carrefour.jsx"
-import Planetvo from "components/cases/planetvo.jsx"
-import Groupama from "components/cases/groupama.jsx"
+import AuchanDirect from "cases/auchandirect.jsx"
+import Carrefour from "cases/carrefour.jsx"
+import Planetvo from "cases/planetvo.jsx"
+import Groupama from "cases/groupama.jsx"
 
 export class Content extends React.Component {
   render() {

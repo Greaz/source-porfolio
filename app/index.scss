@@ -1,5 +1,77 @@
-$grey: #F3F3F3;
+// Colors
+$white: #FFFFFF;
+$background-grey: #F3F3F3;
+
+$text-light-grey: #CACBCC;
+$text-dark-grey: #838791;
+$text-color: #575A61;
+
+$primary: #222D44;
+$primary-darker: #1D2A40;
+
+// Fonts
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+  font-style: normal;
+}
+
+$font-bold: 700;
+$font-regular: 400;
+$font-light: 300;
+
+$Nunito: 'Nunito', sans-serif;
+$Marker: 'Permanent Marker', cursive;
+
+$h1: 48;
+$h2: 32;
+$h3: 26;
+
+$text-highlight: 22;
+$text-size: 16;
+
+// Spacings
+$base: 8;
+
+$spacing1: $base*1;
+$spacing2: $base*2;
+$spacing3: $base*3;
+$spacing4: $base*4;
+$spacing5: $base*6;
+$spacing6: $base*12;
+
+
 
 body {
-  background-color: $grey;
+  background-color: $background-grey;
+  font-family: $Nunito;
+  font-weight: $font-regular;
+  font-size: $text-size;
+  color: $text-color;
+}
+
+h1 {
+  font-family: $Nunito;
+  font-weight: $font-light;
+  font-size: $h1;
+  color: $white;
+}
+
+h2 {
+  font-family: $Marker;
+  font-size: $h2;
+  color: $primary;
+}
+
+h3 {
+  font-family: $Marker;
+  font-size: $h3;
+  color: $primary;
 }
