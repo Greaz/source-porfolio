@@ -5,7 +5,11 @@ export class Groupama extends React.Component {
   render() {
     return (
         <div>
-          <Header text="coming soon"/>
+          <Header>
+            <h1>
+              Coming soon.
+            </h1>
+          </Header>
           <h2> Page groupama </h2>
         </div>
     );

@@ -1,3 +1,48 @@
+// normalize
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 // Colors
 $white: #FFFFFF;
 $background-grey: #F3F3F3;
@@ -6,8 +51,8 @@ $text-light-grey: #CACBCC;
 $text-dark-grey: #838791;
 $text-color: #575A61;
 
-$primary: #222D44;
-$primary-darker: #1D2A40;
+$primary: #26344D;
+$primary-darker: #212E45;
 
 // Fonts
 
@@ -30,33 +75,23 @@ $font-light: 300;
 $Nunito: 'Nunito', sans-serif;
 $Marker: 'Permanent Marker', cursive;
 
-$h1: 48;
-$h2: 32;
-$h3: 26;
+$h1: 40px;
+$h2: 32px;
+$h3: 26px;
 
-$text-highlight: 22;
-$text-size: 16;
+$text-highlight: 22px;
+$text-size: 16px;
 
 // Spacings
-$base: 8;
 
-$spacing1: $base*1;
-$spacing2: $base*2;
-$spacing3: $base*3;
-$spacing4: $base*4;
-$spacing5: $base*6;
-$spacing6: $base*12;
+$spacing1: 8px;
+$spacing2: 16px;
+$spacing3: 24px;
+$spacing4: 32px;
+$spacing5: 48px;
+$spacing6: 96px;
 
-
-body {
-  background-color: $white;
-  font-family: $Nunito;
-  font-weight: $font-regular;
-  font-size: $text-size;
-  color: $text-color;
-  margin: 0;
-  padding: 0;
-}
+// styling site
 
 h2 {
   font-family: $Marker;
@@ -71,14 +106,39 @@ h3 {
 }
 
 .header {
-  width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-color: $primary;
+  overflow: hidden;
+  position: relative;
+	padding: $spacing2;
+	display: flex;
+	justify-content: center;
   
+	div {
+		max-width: 700px;
+		margin: auto;
+	}
+	
   h1 {
     font-family: $Nunito;
     font-weight: $font-light;
     font-size: $h1;
     color: $white;
+		text-align: center;
+    position: relative;
+    z-index: 1;
+    line-height: 60px;
   }
+  
+  span {
+    font-weight: $font-bold;
+    text-decoration: none;
+  }
+	
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
 }
