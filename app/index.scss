@@ -26,6 +26,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	div {
+		width:100%;
+	}
 }
 ol, ul {
 	list-style: none;
@@ -81,6 +84,7 @@ $h3: 26px;
 
 $text-highlight: 22px;
 $text-size: 16px;
+$text-menu: 12px;
 
 // Spacings
 
@@ -105,17 +109,58 @@ h3 {
   color: $primary;
 }
 
+.navigation {
+	height:40px;
+	width: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 2;
+	display: flex;
+	flex-direction: row;
+	
+	div {
+		padding: $spacing1 $spacing2;
+		display: flex;
+	}
+	div:first-child {
+		width:33%;
+	}
+	div:last-child {
+		justify-content: flex-end;
+	}
+	
+	img {
+		max-width: 130px;
+		min-height: 20px;
+		padding: $spacing1 0;
+	}
+	li {
+		display: inline-block;
+		padding: $spacing1;
+		
+		a {
+			text-decoration: none;
+			color: $white;
+			font-family: $Nunito;
+			font-size: $text-menu;
+			font-weight: $font-bold;
+			text-transform: uppercase;
+		}
+	}
+}
+
 .header {
   height: 90vh;
   background-color: $primary;
   overflow: hidden;
   position: relative;
-	padding: $spacing2;
 	display: flex;
 	justify-content: center;
   
 	div {
-		max-width: 700px;
+		max-width: 732px;
+		padding:$spacing2;
 		margin: auto;
 	}
 	
