@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import logo from "../img/svg/logo.svg"
 
 export class Navigation extends React.Component {
+
   render() {
     return (
       <nav className="navigation">
@@ -12,8 +13,8 @@ export class Navigation extends React.Component {
         </div>
         <div>
           <ul>
-            <li><Link to='/'>Cases studies</Link></li>
-            <li><Link to='/about'>About me</Link></li>
+            <li><Link className="menu__link" to='/'>Cases studies</Link></li>
+            <li><Link className="menu__link" to='/about'>About me</Link></li>
           </ul>
         </div>
       </nav>
