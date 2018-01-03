@@ -1,4 +1,7 @@
 import React from "react"
+import { Link } from 'react-router-dom'
+
+
 import Auchan from "../img/svg/adi.svg"
 import Carrefour from "../img/svg/carrefour.svg"
 import Planet from "../img/svg/planet.svg"
@@ -24,6 +27,24 @@ export class PreviewCase extends React.Component {
       return <img src={ Default } alt="Groupama preview case" />;
     }
   }
+  
+  renderPath(img) {
+    if (img === 1) {
+      return "/cases/auchandirect";
+    }
+    else if (img === 2) {
+      return "/cases/carrefour";
+    }
+    else if (img === 3) {
+      return "/cases/planetvo";
+    }
+    else if (img === 4) {
+      return "/cases/groupama";
+    }
+    else {
+      return "/";
+    }
+  }
 
   render() {
     const { 
@@ -34,10 +55,12 @@ export class PreviewCase extends React.Component {
      } = this.props;
     return (
       <div className="ref">
-        <h3> { titre } </h3>
-        <span className="job-title"> { titreJob } </span>
-        <span className="job-skills"> { sousTitre } </span>
-        { this.renderImage(img) }
+        <Link to={ this.renderPath(img) }>
+          <h3> { titre } </h3>
+          <span className="job-title"> { titreJob } </span>
+          <span className="job-skills"> { sousTitre } </span>
+          { this.renderImage(img) }
+        </Link>
       </div>
     );
   }
