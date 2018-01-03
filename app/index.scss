@@ -85,7 +85,7 @@ $h2: 32px;
 $h3: 26px;
 
 $text-highlight: 22px;
-$text-size: 16px;
+$text-size: 14px;
 $text-menu: 12px;
 
 // Spacings
@@ -122,7 +122,7 @@ h3 {
 	flex-direction: row;
 	
 	div {
-		padding: $spacing1 $spacing2;
+		padding: $spacing1;
 		display: flex;
 	}
 	div:first-child {
@@ -135,11 +135,12 @@ h3 {
 	img {
 		max-width: 130px;
 		min-height: 20px;
-		padding: $spacing1 0;
+		padding: 0 $spacing1;
 	}
+	
 	li {
 		display: inline-block;
-		padding: $spacing1;
+		padding: 0 $spacing1;
 		
 		a {
 			text-decoration: none;
@@ -155,7 +156,6 @@ h3 {
 .menu__link {
 	position: relative;
 	display: block;
-	margin: 0 1.5em;
 	padding: 0.65em 0;
 	text-align: center;
 	color: $white;
@@ -203,5 +203,50 @@ h3 {
     top: 0;
     left: 0;
   }
-  
+
+}
+
+.grillCase {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	max-width: 984px;
+	margin: $spacing4 auto;
+}
+
+.ref {
+	display: block;
+	max-width: 460px;
+	min-width: 288px;
+	padding:0 $spacing2;
+	margin-bottom: $spacing5;
+	
+	h3 {
+		margin: $spacing1 0;
+	}
+	
+	span {
+		display: block;
+		text-transform: uppercase;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.job-title {
+	color: $primary;
+	font-family: $Nunito;
+	font-size: $text-size;
+	font-weight: $font-bold;
+	line-height: 18px;
+}
+
+.job-skills {
+	color: $text-dark-grey;
+	font-family: $Nunito;
+	font-size: $text-menu;
+	font-weight: $font-light;
+	line-height: 18px;
+	margin-bottom: $spacing1;
 }

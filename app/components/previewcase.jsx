@@ -35,8 +35,8 @@ export class PreviewCase extends React.Component {
     return (
       <div className="ref">
         <h3> { titre } </h3>
-        <span> { titreJob } </span>
-        <span> { sousTitre } </span>
+        <span className="job-title"> { titreJob } </span>
+        <span className="job-skills"> { sousTitre } </span>
         { this.renderImage(img) }
       </div>
     );
