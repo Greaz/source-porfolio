@@ -271,6 +271,14 @@ span {
 	h3 {
 		color: $white;
 	}
+	div:first-child {
+		padding: $spacing2 0;
+		max-width: 984px;
+		margin: 0 auto;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-between;
+	}
 	
 	div:last-child {
 		background-color: $primary-darker;
@@ -293,5 +301,24 @@ span {
 			color: $white;
 			padding: $spacing1 $spacing2;
 		}
+	}
+}
+
+.brand {
+	padding: $spacing2;
+	width: 288px;
+	
+	h3 {
+		font-size: $text-highlight;
+		margin-bottom: $spacing1;
+	}
+	span {
+		display: block;
+		color: $white;
+		font-size: $text-menu;
+		font-weight: $font-light;
+		line-height: 18px;
+		text-transform: uppercase;
+		opacity: .5;
 	}
 }
