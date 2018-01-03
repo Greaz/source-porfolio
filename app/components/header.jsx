@@ -1,5 +1,5 @@
 import React from "react"
-import illu from "../img/svg/header.svg"
+import Image from "components/image.jsx"
 
 export class Header extends React.Component {
   
@@ -8,7 +8,7 @@ export class Header extends React.Component {
     return (
       <div className="header">
           <div>{ children }</div>
-          <img src={illu} alt="background values" />
+          <Image img={5} />
       </div>
     );
   }

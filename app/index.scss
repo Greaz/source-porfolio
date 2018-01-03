@@ -51,9 +51,9 @@ table {
 $white: #FFFFFF;
 $background-grey: #F3F3F3;
 
-$text-light-grey: #CACBCC;
-$text-dark-grey: #838791;
-$text-color: #575A61;
+$title-grey: #CACBCC;
+$text-grey: #838791;
+$text-primary: #4D5D80;
 
 $primary: #26344D;
 $primary-darker: #212E45;
@@ -86,7 +86,7 @@ $h2: 32px;
 $h3: 26px;
 
 $text-highlight: 22px;
-$text-size: 14px;
+$text-current: 14px;
 $text-menu: 12px;
 
 // Spacings
@@ -103,19 +103,28 @@ $spacing6: 96px;
 h2 {
   font-family: $Marker;
   font-size: $h2;
-  color: $primary;
+  color: $text-primary;
+	margin-bottom: $spacing2;
 }
 
 h3 {
   font-family: $Marker;
   font-size: $h3;
-  color: $primary;
+  color: $text-primary;
 }
 
 span {
 	font-family: $Nunito;
-	font-size: $text-size;
-	color: $primary;
+	font-size: $text-current;
+	color: $text-primary;
+}
+
+p {
+	font-family: $Nunito;
+	font-size: $text-current;
+	font-weight: $font-light;
+	color: $text-grey;
+	line-height: $spacing3;
 }
 
 .navigation {
@@ -259,7 +268,6 @@ span {
 	}
 	
 	span {
-		display: block;
 		text-transform: uppercase;
 	}
 	
@@ -269,13 +277,15 @@ span {
 }
 
 .job-title {
-	font-size: $text-size;
+	display: block;
+	font-size: $text-current;
 	font-weight: $font-bold;
 	line-height: 18px;
 }
 
 .job-skills {
-	color: $text-dark-grey;
+	display: block;
+	color: $text-grey;
 	font-size: $text-menu;
 	font-weight: $font-light;
 	line-height: 18px;
@@ -301,10 +311,10 @@ span {
 	
 	div:last-child {
 		background-color: $primary-darker;
-		margin-top: $spacing3;
+		margin-top: $spacing4;
 		display: flex;
 		justify-content: space-between;
-		padding: $spacing3 0;
+		padding: $spacing4 0;
 		
 		img {
 			padding: 0 $spacing2;
@@ -339,5 +349,30 @@ span {
 		line-height: 18px;
 		text-transform: uppercase;
 		opacity: .5;
+	}
+}
+
+.body {
+	display: flex;
+	max-width: 984px;
+	margin: $spacing4 auto;
+	justify-content: center;
+	
+	section {
+		display: flex;
+		flex-direction: column; 
+		max-width: 600px;
+		min-width: 288px;
+		justify-content: center;
+		padding: 0 $spacing2;
+		
+		h3 {
+			margin:$spacing4 0 $spacing1 0;
+		}
+		
+		img {
+			width: 288px;
+			margin: $spacing3 auto;
+		}
 	}
 }

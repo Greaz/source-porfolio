@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from 'react-router-dom'
-
-import logo from "../img/svg/logo.svg"
+import Image from "components/image.jsx"
 
 export class Navigation extends React.Component {
 
@@ -9,7 +8,7 @@ export class Navigation extends React.Component {
     return (
       <nav className="navigation">
         <div>
-          <img src={logo} alt="logotype" />
+          <Image img={6} />
         </div>
         <div>
           <ul>
