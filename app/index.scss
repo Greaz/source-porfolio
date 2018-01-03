@@ -112,6 +112,12 @@ h3 {
   color: $primary;
 }
 
+span {
+	font-family: $Nunito;
+	font-size: $text-size;
+	color: $primary;
+}
+
 .navigation {
 	height:40px;
 	width: 100%;
@@ -202,6 +208,8 @@ h3 {
   span {
     font-weight: $font-bold;
     text-decoration: none;
+		color: $white;
+		font-size: $h1;
   }
 	
   img {
@@ -235,14 +243,13 @@ h3 {
 		display: block;
 		text-transform: uppercase;
 	}
+	
 	img {
 		width: 100%;
 	}
 }
 
 .job-title {
-	color: $primary;
-	font-family: $Nunito;
 	font-size: $text-size;
 	font-weight: $font-bold;
 	line-height: 18px;
@@ -250,9 +257,41 @@ h3 {
 
 .job-skills {
 	color: $text-dark-grey;
-	font-family: $Nunito;
 	font-size: $text-menu;
 	font-weight: $font-light;
 	line-height: 18px;
 	margin-bottom: $spacing1;
+}
+
+.footer {
+	width:100%;
+	background-color:$primary;
+	color: $white;
+	
+	h3 {
+		color: $white;
+	}
+	
+	div:last-child {
+		background-color: $primary-darker;
+		margin-top: $spacing3;
+		display: flex;
+		justify-content: space-between;
+		padding: $spacing3 0;
+		
+		img {
+			padding: 0 $spacing2;
+		}
+		
+		@media screen and (max-width: 500px) {
+			h3 {
+				display: none;
+			}
+		}
+		
+		span {
+			color: $white;
+			padding: $spacing1 $spacing2;
+		}
+	}
 }

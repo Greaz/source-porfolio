@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "components/header.jsx"
 import PreviewCase from "components/previewcase.jsx"
+import Footer from "components/footer.jsx"
 
 export class Homepage extends React.Component {
   render() {
@@ -37,6 +38,9 @@ export class Homepage extends React.Component {
               img= { 4 }
             />
           </div>
+          <Footer>
+            caca
+          </Footer>
       </div>
     );
   }

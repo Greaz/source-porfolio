@@ -1,5 +1,5 @@
 import React from "react"
-import illu from "../img/svg/illu-header.svg"
+import illu from "../img/svg/header.svg"
 
 export class Header extends React.Component {
   
