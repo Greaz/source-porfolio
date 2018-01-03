@@ -193,24 +193,43 @@ span {
 		padding:$spacing2;
 		margin: auto;
 	}
-	
-  h1 {
-    font-family: $Nunito;
-    font-weight: $font-light;
-    font-size: $h1;
-    color: $white;
-		text-align: center;
-    position: relative;
-    z-index: 1;
-    line-height: 60px;
-  }
-  
-  span {
-    font-weight: $font-bold;
-    text-decoration: none;
-		color: $white;
-		font-size: $h1;
-  }
+	@media screen and (max-width: 500px) {
+		h1 {
+			font-family: $Nunito;
+			font-weight: $font-light;
+			font-size: $h3;
+			color: $white;
+			text-align: center;
+			position: relative;
+			z-index: 1;
+			line-height: 38px;
+		}
+	  span {
+	    font-weight: $font-bold;
+	    text-decoration: none;
+			color: $white;
+			font-size: $h3;
+	  }
+	}
+	@media screen and (min-width: 500px) {
+		h1 {
+			font-family: $Nunito;
+			font-weight: $font-light;
+			font-size: $h1;
+			color: $white;
+			text-align: center;
+			position: relative;
+			z-index: 1;
+			line-height: 60px;
+		}
+		
+	  span {
+	    font-weight: $font-bold;
+	    text-decoration: none;
+			color: $white;
+			font-size: $h1;
+	  }
+	}
 	
   img {
     position: absolute;
