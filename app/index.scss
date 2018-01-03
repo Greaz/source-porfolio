@@ -139,8 +139,13 @@ h3 {
 		padding: 0 $spacing1;
 	}
 	
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+	
 	li {
-		display: inline-block;
 		padding: 0 $spacing1;
 		
 		a {
