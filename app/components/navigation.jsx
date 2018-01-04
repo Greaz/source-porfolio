@@ -8,14 +8,14 @@ export class Navigation extends React.Component {
     return (
       <nav className="navigation">
         <div>
-          <Link to='#/'>
+          <Link to='/'>
             <Image img={6} />
           </Link>
         </div>
         <div>
           <ul>
-            <li><Link className="menu__link" to='#/'>Cases studies</Link></li>
-            <li><Link className="menu__link" to='#/about'>About me</Link></li>
+            <li><Link className="menu__link" to='/'>Cases studies</Link></li>
+            <li><Link className="menu__link" to='/about'>About me</Link></li>
           </ul>
         </div>
       </nav>
