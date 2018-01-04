@@ -367,12 +367,32 @@ p {
 		padding: 0 $spacing2;
 		
 		h3 {
-			margin:$spacing4 0 $spacing1 0;
+			margin:$spacing5 0 $spacing2 0;
 		}
 		
 		img {
 			width: 288px;
 			margin: $spacing3 auto;
+		}
+		
+		li {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: $spacing3;
+				
+			span {
+				color: $text-grey;
+				font-weight: $font-light;
+				line-height: $spacing3;
+			}
+			
+			span:last-child {
+				text-align: right;
+			}
+			
+			b {
+				font-weight: $font-bold;
+			}
 		}
 	}
 }

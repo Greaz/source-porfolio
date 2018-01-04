@@ -25,6 +25,29 @@ export class About extends React.Component {
                 During my projects, I always try to establish a standard base through design systems to create consistency / uniformity within the interface before iterating piece by piece on disruptive / innovative elements. It may seem « overkill » but it is in my opinion the best way to understand the impact of each action
               </p>
               <Image img={7} />
+              <h3>Expériences</h3>
+              <ul>
+                <li>
+                  <span><b>Creative technologist •</b> Auchan:Direct<br />Paris - FR</span>
+                  <span>May 2016 - Today</span>
+                </li>
+                <li>
+                  <span><b>Prototyper & Interaction designer •</b> Nealite<br />Paris - FR</span>
+                  <span>October 2014 - May 2016</span>
+                </li>
+                <li>
+                  <span><b>UI designer •</b> Nealite<br />Paris - FR</span>
+                  <span>October 2013 - October 2014</span>
+                </li>
+                <li>
+                  <span><b>UI designer & Motion designer •</b> SF Factory<br />Paris - FR</span>
+                  <span>June 2013 - September 2013</span>
+                </li>
+                <li>
+                  <span><b>Webdesigner •</b> Pixel Cookers<br />Neuville sur oise - FR</span>
+                  <span>Juillet 2012 - September 2012</span>
+                </li>
+              </ul>
             </section>
           </div>
           <Footer/>

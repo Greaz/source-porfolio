@@ -8,7 +8,9 @@ export class Navigation extends React.Component {
     return (
       <nav className="navigation">
         <div>
-          <Image img={6} />
+          <Link to='/'>
+            <Image img={6} />
+          </Link>
         </div>
         <div>
           <ul>
