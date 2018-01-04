@@ -1,6 +1,6 @@
 import React from "react"
 import { Switch, Route } from 'react-router-dom'
-import { hashHistory } from 'react-router';
+import {createHashHistory as createHistory} from 'history'
 
 import Homepage from "homepage.jsx"
 import About from "about.jsx"
@@ -10,10 +10,10 @@ import Carrefour from "cases/carrefour.jsx"
 import Planetvo from "cases/planetvo.jsx"
 import Groupama from "cases/groupama.jsx"
 
-export class Content extends React.Component {
+export class Routes extends React.Component {
   render() {
     return (
-      <Switch history={ hashHistory }>
+      <Switch history={ createHistory({ basename: location.pathname }) }>
         <Route exact path='/' component={ Homepage } />
         <Route exact path='/about' component={ About } />
         <Route exact path="/cases/auchandirect" component={ AuchanDirect } />
@@ -24,4 +24,4 @@ export class Content extends React.Component {
     );
   }
 }
-module.exports = Content;
+module.exports = Routes;

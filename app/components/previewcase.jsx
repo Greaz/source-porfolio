@@ -6,19 +6,19 @@ export class PreviewCase extends React.Component {
   
   renderPath(img) {
     if (img === 1) {
-      return "/cases/auchandirect";
+      return "#/cases/auchandirect";
     }
     else if (img === 2) {
-      return "/cases/carrefour";
+      return "#/cases/carrefour";
     }
     else if (img === 3) {
-      return "/cases/planetvo";
+      return "#/cases/planetvo";
     }
     else if (img === 4) {
-      return "/cases/groupama";
+      return "#/cases/groupama";
     }
     else {
-      return "/";
+      return "#/";
     }
   }
 
