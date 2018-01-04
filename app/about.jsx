@@ -48,6 +48,21 @@ export class About extends React.Component {
                   <span>Juillet 2012 - September 2012</span>
                 </li>
               </ul>
+              <h3>Education</h3>
+              <ul>
+                <li>
+                  <span><b>HETIC •</b> Paris - FR<br />Expert en Ingénierie et Management de la Communication Numérique</span>
+                  <span>2011 - 2014</span>
+                </li>
+                <li>
+                  <span><b>Université Paris XIII •</b> Paris - FR<br />DUT Service et Réseaux de Communication</span>
+                  <span>2009 - 2011</span>
+                </li>
+                <li>
+                  <span>And other graduates from kids schools...</span>
+                  <span>2011 - day of birth</span>
+                </li>
+              </ul>
             </section>
           </div>
           <Footer/>
