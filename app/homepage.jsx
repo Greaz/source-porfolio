@@ -9,7 +9,7 @@ export class Homepage extends React.Component {
       <div>
           <Header>
             <h1>
-              Hello, i solve <span>design problems</span> by designing <span>suitable experiences</span> for <span>the web</span> and <span>the mobile</span>.
+              Hello, i solve <span>problems</span> by designing <span>suitable experiences</span> for <span>the web</span> and <span>the mobile</span>.
             </h1>
           </Header>
           <div className="grillCase">

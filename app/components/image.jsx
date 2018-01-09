@@ -1,6 +1,6 @@
 import React from "react"
 
-import Header from "../img/svg/header.svg"
+import Background from "../img/svg/header.svg"
 import Logo from "../img/svg/logo.svg"
 import Auchan from "../img/svg/adi.svg"
 import Carrefour from "../img/svg/carrefour.svg"
@@ -25,7 +25,7 @@ export class Image extends React.Component {
       return <img src={ Groupama } alt="Groupama preview case" />;
     }
     else if (img === 5) {
-      return <img src={ Header } alt="svg background header" />;
+      return <img src={ Background } alt="svg background header" />;
     }
     else if (img === 6) {
       return <img src={ Logo } alt="logotype" />;

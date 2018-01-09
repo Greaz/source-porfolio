@@ -9,7 +9,7 @@ export class About extends React.Component {
       <div>
           <Header>
             <h1>
-              <span>Guess, try, check, learn, retry…</span><br/>I do not have the infused science, I am just trying <span>not</span> to <span>make</span> the <span>same mistake</span> twice.
+              <span>Guess, try, check, learn, retry…</span><br/>I do not know everything, i am just trying <span>not</span> to <span>make</span> the <span>same mistake</span> twice.
             </h1>
           </Header>
           <div className="body">
