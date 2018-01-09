@@ -5,10 +5,10 @@ import {createHashHistory as createHistory} from 'history'
 import Homepage from "homepage.jsx"
 import About from "about.jsx"
 
-import AuchanDirect from "cases/auchandirect.jsx"
-import Carrefour from "cases/carrefour.jsx"
-import Planetvo from "cases/planetvo.jsx"
-import Groupama from "cases/groupama.jsx"
+import AuchanDirect from "auchandirect.jsx"
+import Carrefour from "carrefour.jsx"
+import Planetvo from "planetvo.jsx"
+import Groupama from "groupama.jsx"
 
 export class Routes extends React.Component {
   render() {
@@ -16,10 +16,10 @@ export class Routes extends React.Component {
       <Switch history={ createHistory({ basename: location.pathname }) }>
         <Route exact path='/' component={ Homepage } />
         <Route exact path='/about' component={ About } />
-        <Route exact path="/cases/auchandirect" component={ AuchanDirect } />
-        <Route exact path="/cases/carrefour" component={ Carrefour } />
-        <Route exact path="/cases/planetvo" component={ Planetvo } />
-        <Route exact path="/cases/groupama" component={ Groupama } />
+        <Route exact path="/auchandirect" component={ AuchanDirect } />
+        <Route exact path="/carrefour" component={ Carrefour } />
+        <Route exact path="/planetvo" component={ Planetvo } />
+        <Route exact path="/groupama" component={ Groupama } />
       </Switch>
     );
   }

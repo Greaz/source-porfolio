@@ -9,6 +9,8 @@ import Groupama from "../img/svg/groupama.svg"
 import About from "../img/svg/about.svg"
 import Default from "../img/svg/default.svg"
 import Dribbble from "../img/svg/dribbble.svg"
+import Ux from "../img/svg/ux.svg"
+import Ux2 from "../img/svg/ux2.svg"
 
 export class Image extends React.Component {
   
@@ -36,6 +38,12 @@ export class Image extends React.Component {
     }
     else if (img === 8) {
       return <img src={ Dribbble } alt="dribbble ball icon" />;
+    }
+    else if (img === 9) {
+      return <img src={ Ux } alt="Ux case" />;
+    }
+    else if (img === 10) {
+      return <img src={ Ux2 } alt="illustration of the situation" />;
     }
     else {
       return <img src={ Default } alt="default img" />;

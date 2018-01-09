@@ -422,3 +422,93 @@ p {
 		}
 	}
 }
+
+.title-case {
+	display: flex;
+	justify-content: space-between;
+	margin: $spacing4 auto $spacing5 auto;
+	max-width: 984px;
+	
+	h2 {
+		padding: 0 $spacing2;
+	}
+	
+	div {
+		text-align: right;
+		padding: 0 $spacing2;
+	}
+}
+
+.problem {
+	margin: 0 $spacing2;
+	
+	section {
+		margin: -10px auto $spacing4 auto;
+	}
+	
+	div {
+    display: flex;
+    flex-direction: column;
+    max-width:  984px;
+    margin: 0 auto;
+	}
+}
+
+.situation {
+	background-color: $background-grey;
+	
+	div {
+		display: flex;
+    flex-direction: column;
+    max-width:  984px;
+    margin: 0 auto;
+		padding-top: $spacing4;
+	}
+	
+	h3 {
+		padding: 0 $spacing2;
+	}
+	
+	@media screen and (min-width: 500px) {
+		h3 {
+			margin-bottom: $spacing5;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		h3 {
+			margin-bottom: $spacing4;
+		}
+		img {
+			height: 80px;
+		}
+	}
+	
+	img {
+		padding: 0 $spacing2;
+	}
+}
+
+.card {
+	max-width: 600px;
+	padding: $spacing4;
+	background-color: $white;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	
+	h3 {
+		margin-bottom: $spacing2;
+	}
+	
+	p {
+		font-size: $text-highlight;
+		line-height: 28px;
+	}
+	
+	div {
+		font-family: $Marker;
+		font-size: $h1;
+		text-align: center;
+		color: $text-primary;
+		margin: $spacing2 0;
+	}
+}
