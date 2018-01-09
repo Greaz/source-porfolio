@@ -257,6 +257,31 @@ p {
 	margin: $spacing4 auto;
 }
 
+.dribbble {
+	display: flex;
+	max-width: 984px;
+	margin: $spacing4 auto $spacing6 auto;
+	justify-content: center;
+	
+	section {
+		max-width: 600px;
+		display: flex;
+		flex-direction: column;
+		
+		img {
+			width: 100px;
+			margin: $spacing2 auto;
+		}
+		
+		span {
+			text-align: center;
+			font-size: $text-highlight;
+			line-height: 28px;
+		}
+		
+	}
+}
+
 .ref {
 	display: block;
 	max-width: 460px;

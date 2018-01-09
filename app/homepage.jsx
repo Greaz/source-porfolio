@@ -2,6 +2,8 @@ import React from "react"
 import Header from "components/header.jsx"
 import PreviewCase from "components/previewcase.jsx"
 import Footer from "components/footer.jsx"
+import Image from "components/image.jsx"
+import { Link } from 'react-router-dom'
 
 export class Homepage extends React.Component {
   render() {
@@ -12,6 +14,16 @@ export class Homepage extends React.Component {
               Hello, i solve <span>problems</span> by designing <span>suitable experiences</span> for <span>the web</span> and <span>the mobile</span>.
             </h1>
           </Header>
+          <div className="dribbble">
+            <a href="https://dribbble.com/Greaz">
+              <section>
+                <Image img={8} />
+                <span>
+                  My study cases are coming soon, meanwhile I invite you to look at my profile dribbble!
+                </span>
+              </section>
+            </a>
+          </div>
           <div className="grillCase">
             <PreviewCase 
               titre= "Auchan:Direct"

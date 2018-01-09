@@ -8,6 +8,7 @@ import Planet from "../img/svg/planet.svg"
 import Groupama from "../img/svg/groupama.svg"
 import About from "../img/svg/about.svg"
 import Default from "../img/svg/default.svg"
+import Dribbble from "../img/svg/dribbble.svg"
 
 export class Image extends React.Component {
   
@@ -32,6 +33,9 @@ export class Image extends React.Component {
     }
     else if (img === 7) {
       return <img src={ About } alt="don't make same mistake twice" />;
+    }
+    else if (img === 8) {
+      return <img src={ Dribbble } alt="dribbble ball icon" />;
     }
     else {
       return <img src={ Default } alt="default img" />;
