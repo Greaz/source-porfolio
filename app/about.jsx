@@ -9,7 +9,7 @@ export class About extends React.Component {
       <div>
           <Header>
             <h1>
-              <span>Guess, try, check, learn, repeat again until it works.</span>I don’t know everything but I won’t make the same mistake twice.
+              <span>Guess, try, check, learn, repeat again until it works. </span>I don’t know everything but I won’t make the same mistake twice.
             </h1>
           </Header>
           <div className="body">

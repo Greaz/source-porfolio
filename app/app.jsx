@@ -8,9 +8,11 @@ export class App extends React.Component {
     return (
       <div>
         <Helmet>
+          <title>Portfolio Rémy Saddour</title>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, user-scalable=no" />
-          <title>Portfolio Rémy Saddour</title>
+          <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700" rel="stylesheet" />
         </Helmet>
         <Navigation/>
         <Routes/>
