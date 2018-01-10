@@ -447,24 +447,42 @@ p {
 .situation {
 	background-color: $background-grey;
 	box-sizing: border-box;
-	padding: 0 $spacing2;
+	padding: $spacing4 $spacing2;
 	
 	div {
-		display: flex;
-    flex-direction: column;
     max-width:  984px;
     margin: 0 auto;
-		padding-top: $spacing2;
+		padding: $spacing2 0;
 	}
 	
-	@media screen and (min-width: 500px) {
-		h3 {
-			margin-bottom: $spacing5;
+	div:nth-child(2) {
+		display: flex;
+		justify-content: center;
+		
+		section {
+			margin: $spacing1;
 		}
+		
 	}
-	@media screen and (max-width: 500px) {
+
+	img {
+		width: 100%;
+	}
+	
+	@media screen and (min-width: 700px) {
 		h3 {
 			margin-bottom: $spacing4;
+		}
+		div:nth-child(2) {
+			flex-direction: row;
+		}
+	}
+	@media screen and (max-width: 700px) {
+		h3 {
+			margin-bottom: $spacing3;
+		}
+		div:nth-child(2) {
+			flex-direction: column;
 		}
 		img {
 			height: 80px;
@@ -479,13 +497,33 @@ p {
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	
-	h3 {
+	h3, h5 {
 		margin-bottom: $spacing2;
+	}
+	
+
+	h5 {
+		font-family: $Nunito;
+		font-size: $text-highlight;
+		color: $text-primary;
+	}
+	
+	span {
+		font-family: $Nunito;
+		font-size: $text-current;
+		color: $text-grey;
+		line-height: 24px;
 	}
 	
 	p {
 		font-size: $text-highlight;
 		line-height: 28px;
+	}
+	
+	b {
+		font-family: $Marker;
+		color: $red;
+		font-size: $h3;
 	}
 	
 	div {
@@ -494,5 +532,22 @@ p {
 		text-align: center;
 		color: $text-primary;
 		margin: $spacing2 0;
+	}
+}
+
+.quote {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	
+	q {
+		font-family: $Nunito;
+		font-size: $text-highlight;
+		font-weight: $font-light;
+		color: $text-grey;
+		line-height: 32px;
+		b {
+			font-weight: $font-bold;
+		}
 	}
 }

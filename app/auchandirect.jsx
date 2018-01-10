@@ -38,6 +38,27 @@ export class Auchandirect extends React.Component {
               <h3>Situation of a reset password usecase</h3>
               <Image img={10} />
             </div>
+            <div>
+              <section className="card">
+                <h5><b>1 :</b> First hypothese of the cause</h5>
+                <span>
+                  Mobile users are not redirected properly on the reset page, making them unable to finish their action
+                </span>
+              </section>
+              <section className="card">
+                <h5><b>2 :</b> Second hypothese of the cause</h5>
+                <span>
+                  Logging the user automatically after he has reset his password  putting the user's account into a strange status
+                </span>
+              </section>
+            </div>
+            <div>
+              <section className="quote">
+                <q>
+                  After analyzing customer contacts on the "password reset" tag, <b>75% of complaints per month correspond to the second hypothesis of cause</b>
+                </q>
+              </section>
+            </div>
             </section>
         </div>
     );
