@@ -116,7 +116,6 @@ p {
 }
 
 .navigation {
-	height:40px;
 	width: 100%;
 	position:absolute;
 	top:0;
@@ -124,9 +123,10 @@ p {
 	z-index: 2;
 	display: flex;
 	flex-direction: row;
+	box-sizing: border-box;
+	padding: $spacing2;
 	
 	div {
-		padding: $spacing1;
 		display: flex;
 	}
 	div:first-child {
@@ -134,12 +134,12 @@ p {
 	}
 	div:last-child {
 		justify-content: flex-end;
+		align-content: center;
 	}
 	
 	img {
 		max-width: 130px;
 		min-height: 20px;
-		padding: 0 $spacing1;
 	}
 	
 	ul {
@@ -150,6 +150,7 @@ p {
 	
 	li {
 		padding: 0 $spacing1;
+		align-content: center;
 		
 		a {
 			text-decoration: none;
@@ -165,7 +166,6 @@ p {
 .menu__link {
 	position: relative;
 	display: block;
-	padding: 0.65em 0;
 	text-align: center;
 	color: $white;
 	-webkit-transition: background 0.3s, color 0.3s;
@@ -242,14 +242,18 @@ p {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	max-width: 984px;
-	margin: $spacing4 auto;
+	margin: $spacing2 auto;
+	box-sizing: border-box;
+	padding: $spacing2;
 }
 
 .dribbble {
 	display: flex;
 	max-width: 984px;
-	margin: $spacing4 auto $spacing6 auto;
+	margin: $spacing2 auto $spacing4 auto;
 	justify-content: center;
+	box-sizing: border-box;
+	padding: $spacing2;
 	
 	section {
 		max-width: 600px;
@@ -274,7 +278,6 @@ p {
 	display: block;
 	max-width: 460px;
 	min-width: 288px;
-	padding:0 $spacing2;
 	margin-bottom: $spacing5;
 	
 	h3 {
@@ -321,6 +324,8 @@ p {
 		display: flex;
 		flex-flow: wrap;
 		justify-content: space-between;
+		box-sizing: border-box;
+		padding: $spacing2;
 	}
 	
 	div:last-child {
@@ -329,10 +334,8 @@ p {
 		display: flex;
 		justify-content: space-between;
 		padding: $spacing4 0;
-		
-		img {
-			padding: 0 $spacing2;
-		}
+		box-sizing: border-box;
+		padding: $spacing2;
 		
 		@media screen and (max-width: 500px) {
 			h3 {
@@ -342,13 +345,13 @@ p {
 		
 		span {
 			color: $white;
-			padding: $spacing1 $spacing2;
+			padding: $spacing1 0;
 		}
 	}
 }
 
 .brand {
-	padding: $spacing2;
+	padding: $spacing2 0;
 	width: 288px;
 	
 	h3 {
@@ -371,6 +374,8 @@ p {
 	max-width: 984px;
 	margin: $spacing4 auto;
 	justify-content: center;
+	box-sizing: border-box;
+	padding: $spacing2;
 	
 	section {
 		display: flex;
@@ -378,7 +383,6 @@ p {
 		max-width: 600px;
 		min-width: 288px;
 		justify-content: center;
-		padding: 0 $spacing2;
 		
 		h3 {
 			margin:$spacing5 0 $spacing2 0;
@@ -414,21 +418,19 @@ p {
 .title-case {
 	display: flex;
 	justify-content: space-between;
-	margin: $spacing4 auto $spacing5 auto;
+	margin: $spacing2 auto $spacing3 auto;
 	max-width: 984px;
-	
-	h2 {
-		padding: 0 $spacing2;
-	}
+	box-sizing: border-box;
+	padding: $spacing2;
 	
 	div {
 		text-align: right;
-		padding: 0 $spacing2;
 	}
 }
 
 .problem {
-	margin: 0 $spacing2;
+	box-sizing: border-box;
+	padding: 0 $spacing2;
 	
 	section {
 		margin: -10px auto $spacing4 auto;
@@ -444,17 +446,15 @@ p {
 
 .situation {
 	background-color: $background-grey;
+	box-sizing: border-box;
+	padding: 0 $spacing2;
 	
 	div {
 		display: flex;
     flex-direction: column;
     max-width:  984px;
     margin: 0 auto;
-		padding-top: $spacing4;
-	}
-	
-	h3 {
-		padding: 0 $spacing2;
+		padding-top: $spacing2;
 	}
 	
 	@media screen and (min-width: 500px) {
@@ -469,10 +469,6 @@ p {
 		img {
 			height: 80px;
 		}
-	}
-	
-	img {
-		padding: 0 $spacing2;
 	}
 }
 
