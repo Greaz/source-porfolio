@@ -11,7 +11,7 @@ export class Homepage extends React.Component {
       <div>
           <Header>
             <h1>
-              Hello, i solve <span>problems</span> by designing <span>suitable experiences</span> for <span>the web</span> and <span>the mobile</span>.
+              Hello, I solve <span>problems</span> by designing <span>suitable experiences</span> for <span>the web</span> and <span>the mobile</span>.
             </h1>
           </Header>
           <div className="dribbble">
@@ -19,7 +19,7 @@ export class Homepage extends React.Component {
               <section>
                 <Image img={8} />
                 <span>
-                  My study cases are coming soon, meanwhile I invite you to look at my profile dribbble!
+                  My study cases are coming soon, meanwhile I invite you to look at my dribbble profile!
                 </span>
               </section>
             </a>

@@ -9,7 +9,7 @@ export class About extends React.Component {
       <div>
           <Header>
             <h1>
-              <span>Guess, try, check, learn, retry…</span><br/>I do not know everything, i am just trying <span>not</span> to <span>make</span> the <span>same mistake</span> twice.
+              <span>Guess, try, check, learn, repeat again until it works.</span>I don’t know everything but I won’t make the same mistake twice.
             </h1>
           </Header>
           <div className="body">
@@ -17,12 +17,9 @@ export class About extends React.Component {
               <h2>Rémy Saddour</h2>
               <span className="job-title">27 ans, CREATIVE TECHNOLOGIST somethings like that…</span>
               <span className="job-skills">UX, UI, PROTOTYPES, INTERACTIONS, MOTION DESIGN</span>
-              <h3>How do i work ?</h3>
+              <h3>What is my job ?</h3>
               <p>
-                I have 2 principles, I'm trying to learn from my mistakes by applying the lean methodology (PDCA) "Plan Do Check Act" and i do not concider myself as an artist.
-                I always try to be pragmatic by making fact-based choices.
-                <br/><br/>
-                During my projects, I always try to establish a standard base through design systems to create consistency / uniformity within the interface before iterating piece by piece on disruptive / innovative elements. It may seem « overkill » but it is in my opinion the best way to understand the impact of each action
+                In my opinion, the mission of Design is to offer fact-based, pragmatic solutions that save time and resources. In order to do that, I use the LEAN approach : when working on a project I create a design system to give uniformity to my interface and then I iterate piece by piece to improve this base of reference. The PDCA “Plan Do Check Act” methodology helps me identify and plan my action and analyze their impact.
               </p>
               <Image img={7} />
               <h3>Expériences</h3>
@@ -45,7 +42,7 @@ export class About extends React.Component {
                 </li>
                 <li>
                   <span><b>Webdesigner •</b> Pixel Cookers<br />Neuville sur oise - FR</span>
-                  <span>Juillet 2012 - September 2012</span>
+                  <span>July 2012 - September 2012</span>
                 </li>
               </ul>
               <h3>Education</h3>
@@ -57,10 +54,6 @@ export class About extends React.Component {
                 <li>
                   <span><b>Université Paris XIII •</b> Paris - FR<br />DUT Service et Réseaux de Communication</span>
                   <span>2009 - 2011</span>
-                </li>
-                <li>
-                  <span>And other graduates from kids schools...</span>
-                  <span>2011 - day of birth</span>
                 </li>
               </ul>
             </section>
