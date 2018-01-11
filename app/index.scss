@@ -179,11 +179,11 @@ p {
 
 .header {
   height: 90vh;
-  background-color: $primary;
   overflow: hidden;
   position: relative;
 	display: flex;
 	justify-content: center;
+	background-color: $primary;
   
 	div {
 		max-width: 732px;
@@ -544,10 +544,10 @@ p {
 		font-family: $Nunito;
 		font-size: $text-highlight;
 		font-weight: $font-light;
-		color: $text-grey;
+		color: $primary;
 		line-height: 32px;
 		b {
-			font-weight: $font-bold;
+			font-weight: $font-regular;
 		}
 	}
 }
