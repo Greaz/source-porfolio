@@ -535,6 +535,23 @@ p {
 	}
 }
 
+.action {
+	box-sizing: border-box;
+	padding: $spacing4 $spacing2;
+	
+	section {
+		margin: $spacing2 auto $spacing4 auto;
+		
+		p {
+			margin-bottom: $spacing2;
+		}
+	}
+	
+	img {
+		width: 100%;
+	}
+}
+
 .card {
 	max-width: 600px;
 	padding: $spacing4;

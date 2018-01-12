@@ -60,6 +60,18 @@ export class Auchandirect extends React.Component {
               </section>
             </div>
             </section>
+            <section className="action">
+              <div>
+                <section className="card">
+                  <h3>Action</h3>
+                  <p>
+                    For fast implementation constraints, we decided to separate the password reset action and the connection reset action.
+                  </p>
+                  <span>Release date : 19/05/2017</span>
+                </section>
+              </div>
+              <Image img={11}/>
+            </section>
         </div>
     );
   }

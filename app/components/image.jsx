@@ -7,6 +7,7 @@ import Default from "../img/svg/default.svg"
 import Dribbble from "../img/svg/dribbble.svg"
 import Ux from "../img/svg/ux.svg"
 import Ux2 from "../img/svg/ux2.svg"
+import UxResult from "../img/svg/result.svg"
 
 import LogoAuchan from "../img/svg/adi-logo.svg"
 import LogoCarrefour from "../img/svg/carrefour-logo.svg"
@@ -45,6 +46,9 @@ export class Image extends React.Component {
     }
     else if (img === 10) {
       return <img src={ Ux2 } alt="illustration of the situation" />;
+    }
+    else if (img === 11) {
+      return <img src={ UxResult } alt="results" />;
     }
     else {
       return <img src={ Default } alt="default img" />;
