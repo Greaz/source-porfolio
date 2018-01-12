@@ -375,7 +375,6 @@ p {
 		margin-top: $spacing4;
 		display: flex;
 		justify-content: space-between;
-		padding: $spacing4 0;
 		box-sizing: border-box;
 		padding: $spacing2;
 		
@@ -388,6 +387,10 @@ p {
 		span {
 			color: $white;
 			padding: $spacing1 0;
+		}
+		
+		a {
+			align-self: center;
 		}
 	}
 }

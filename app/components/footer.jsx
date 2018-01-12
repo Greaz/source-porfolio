@@ -1,6 +1,7 @@
 import React from "react"
 import Brands from "components/brands.jsx"
 import Image from "components/image.jsx"
+import { Link } from 'react-router-dom'
 
 export class Footer extends React.Component {
   
@@ -23,7 +24,9 @@ export class Footer extends React.Component {
             <Brands titre="TOM KYNS" jobTitle="FREELANCE" jobSkills="LOGOTYPE, WORDPRESS THEME"/>
           </div>
           <div>
-            <Image img={6} />
+            <Link to='/'>
+              <Image img={6} />
+            </Link>
             <h3>Bisous</h3>
             <span>remy.saddour@gmail.com</span>
           </div>
