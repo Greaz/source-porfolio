@@ -167,10 +167,11 @@ p {
 	}
 	
 	li {
+		display: flex;
 		padding: 0 $spacing1;
-		align-content: center;
 		
 		a {
+			align-self: center;
 			text-decoration: none;
 			color: $white;
 			font-family: $Nunito;
