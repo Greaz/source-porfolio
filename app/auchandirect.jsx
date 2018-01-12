@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "components/header.jsx"
 import Image from "components/image.jsx"
+import Footer from "components/footer.jsx"
 
 export class Auchandirect extends React.Component {
   render() {
@@ -72,6 +73,7 @@ export class Auchandirect extends React.Component {
               </div>
               <Image img={11}/>
             </section>
+            <Footer />
         </div>
     );
   }
