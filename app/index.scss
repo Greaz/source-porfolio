@@ -117,24 +117,20 @@ p {
 
 .prev-auchan {
 	background-image: url("img/others/adi.jpg");
-	background-repeat: no-repeat;
 }
 
 .prev-carrefour {
 	background-image: url("img/others/carrefour.jpg");
-	background-repeat: no-repeat;
 }
 
 
 .prev-pvo {
 	background-image: url("img/others/pvo.jpg");
-	background-repeat: no-repeat;
 }
 
 
 .prev-groupama {
 	background-image: url("img/others/groupama.jpg");
-	background-repeat: no-repeat;
 }
 
 .navigation {
@@ -315,6 +311,7 @@ p {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		background-size: cover;
 		
 		@media screen and (min-width: 500px) {
 			height: 600px;
