@@ -115,6 +115,28 @@ p {
 	line-height: $spacing3;
 }
 
+.prev-auchan {
+	background-image: url("img/others/adi.jpg");
+	background-repeat: no-repeat;
+}
+
+.prev-carrefour {
+	background-image: url("img/others/carrefour.jpg");
+	background-repeat: no-repeat;
+}
+
+
+.prev-pvo {
+	background-image: url("img/others/pvo.jpg");
+	background-repeat: no-repeat;
+}
+
+
+.prev-groupama {
+	background-image: url("img/others/groupama.jpg");
+	background-repeat: no-repeat;
+}
+
 .navigation {
 	width: 100%;
 	position:absolute;
@@ -287,9 +309,31 @@ p {
 	span {
 		text-transform: uppercase;
 	}
-	
-	img {
-		width: 100%;
+	div {
+		box-sizing: border-box;
+		padding: $spacing4;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+		@media screen and (min-width: 500px) {
+			height: 600px;
+		}
+		@media screen and (max-width: 500px) {
+			height: 300px;
+		}
+		
+		img {
+			margin: $spacing2;
+		}
+		
+		p {
+			text-align: center;
+			font-size: $text-highlight;
+			font-family: $Nunito;
+			line-height: 28px;
+			color: $white;
+		}
 	}
 }
 

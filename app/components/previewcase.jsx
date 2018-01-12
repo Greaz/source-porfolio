@@ -9,16 +9,59 @@ export class PreviewCase extends React.Component {
       return "/auchandirect";
     }
     else if (img === 2) {
-      return "/carrefour";
+      return "/"; // when it's ready "/carrefour"
     }
     else if (img === 3) {
-      return "/planetvo";
+      return "/"; // when it's ready "/planetvo"
     }
     else if (img === 4) {
-      return "/groupama";
+      return "/"; // when it's ready "/groupama"
     }
     else {
       return "/";
+    }
+  }
+  
+  renderPreview(img) {
+    if (img === 1) {
+      return (
+        <div className="prev-auchan" >
+          <Image img={img} />
+          <p>Allow users to do their food shopping in less than 20 minutes.</p>
+        </div>
+      );
+    }
+    else if (img === 2) {
+      return (
+        <div className="prev-carrefour" >
+          <Image img={img} />
+          <p>Coming soon</p>
+        </div>
+      );
+    }
+    else if (img === 3) {
+      return (
+        <div className="prev-pvo" >
+          <Image img={img} />
+          <p>Coming soon</p>
+        </div>
+      );
+    }
+    else if (img === 4) {
+      return (
+        <div className="prev-groupama" >
+          <Image img={img} />
+          <p>Coming soon</p>
+        </div>
+      );
+    }
+    else {
+      return (
+        <div>
+          <Image img={img} />
+          <p>Coming soon | work in progress</p>
+        </div>
+      );
     }
   }
 
@@ -35,7 +78,7 @@ export class PreviewCase extends React.Component {
           <h3> { titre } </h3>
           <span className="job-title"> { titreJob } </span>
           <span className="job-skills"> { sousTitre } </span>
-          <Image img={img} />
+          {this.renderPreview(img)}
         </Link>
       </div>
     );
