@@ -613,3 +613,51 @@ p {
 		}
 	}
 }
+
+.other-work {
+	box-sizing: border-box;
+	padding: $spacing4 $spacing2;
+	
+	img:first-child {
+		margin: $spacing5 0;
+		width: 100%;
+	}
+	
+	div {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+    max-width:  984px;
+    margin: 0 auto;
+	}
+}
+
+.adi-work {
+	max-width: 460px;
+	
+	img {
+		width:100%;
+	}
+	
+	section {
+		height: 70px;
+	  overflow: hidden;
+	  position: relative;
+		display: flex;
+		justify-content: center;
+		margin-bottom: $spacing1;
+		
+		span:first-child {
+				font-family: $Marker;
+				font-size: 96px;
+				color: #CACBCC;
+				position: absolute;
+		    top: -24%;
+		    left: 42%;
+		}
+		span:last-child {
+			align-self: center;
+			z-index: 1;
+		}
+	}
+}

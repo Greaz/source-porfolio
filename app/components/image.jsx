@@ -8,11 +8,15 @@ import Dribbble from "../img/svg/dribbble.svg"
 import Ux from "../img/svg/ux.svg"
 import Ux2 from "../img/svg/ux2.svg"
 import UxResult from "../img/svg/result.svg"
+import OtherWork from "../img/svg/adi-other.svg"
 
 import LogoAuchan from "../img/svg/adi-logo.svg"
 import LogoCarrefour from "../img/svg/carrefour-logo.svg"
 import LogoPvo from "../img/svg/pvo-logo.svg"
 import LogoGroupama from "../img/svg/groupama-logo.svg"
+
+import AdiNav from "../img/others/adi-work1.jpg"
+import NewCart from "../img/others/cart.gif"
 
 export class Image extends React.Component {
   
@@ -49,6 +53,15 @@ export class Image extends React.Component {
     }
     else if (img === 11) {
       return <img src={ UxResult } alt="results" />;
+    }
+    else if (img === 12) {
+      return <img src={ OtherWork } alt="Other works" />;
+    }
+    else if (img === 13) {
+      return <img src={ AdiNav } alt="Auchan:Direct new nav" />;
+    }
+    else if (img === 14) {
+      return <img src={ NewCart } alt="Auchan:Direct new product card" />;
     }
     else {
       return <img src={ Default } alt="default img" />;

@@ -2,6 +2,7 @@ import React from "react"
 import Header from "components/header.jsx"
 import Image from "components/image.jsx"
 import Footer from "components/footer.jsx"
+import Work from "components/work.jsx"
 
 export class Auchandirect extends React.Component {
   render() {
@@ -72,6 +73,13 @@ export class Auchandirect extends React.Component {
                 </section>
               </div>
               <Image img={11}/>
+            </section>
+            <section className="other-work">
+              <div>  
+                <Image img={12}/>
+                <Work img={13} titre="Rework how to navigate in the website" num="1" />
+                <Work img={14} titre="Rework how to add products in the cart" num="2" />
+              </div>
             </section>
             <Footer />
         </div>
