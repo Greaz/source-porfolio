@@ -78,7 +78,8 @@ export class Auchandirect extends React.Component {
               <div>  
                 <Image img={12}/>
                 <Work img={13} titre="Rework how to navigate in the website" num="1" />
-                <Work img={14} titre="Rework how to add products in the cart" num="2" />
+                <Work img={14} titre="Rework product list and product card" num="2" />
+                <Work img={15} titre="Create a page loader full svg" num="3" />
               </div>
             </section>
             <Footer />

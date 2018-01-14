@@ -16,7 +16,8 @@ import LogoPvo from "../img/svg/pvo-logo.svg"
 import LogoGroupama from "../img/svg/groupama-logo.svg"
 
 import AdiNav from "../img/others/adi-work1.jpg"
-import NewCart from "../img/others/cart.gif"
+import NewCart from "../img/others/cart.jpg"
+import AdiLoader from "../img/svg/adi-loader.svg"
 
 export class Image extends React.Component {
   
@@ -62,6 +63,9 @@ export class Image extends React.Component {
     }
     else if (img === 14) {
       return <img src={ NewCart } alt="Auchan:Direct new product card" />;
+    }
+    else if (img === 15) {
+      return <img src={ AdiLoader } alt="Auchan:Direct new product card" />;
     }
     else {
       return <img src={ Default } alt="default img" />;
