@@ -48,7 +48,7 @@ export class About extends React.Component {
           <div className="body">
             <section>
               <h2>Rémy Saddour</h2>
-              <span className="job-title">27 ans, CREATIVE TECHNOLOGIST</span>
+              <span className="job-title">27 ans, UX and UI designer</span>
               <span className="job-skills">UX, UI, PROTOTYPES, INTERACTIONS, MOTION DESIGN</span>
               <h3>What is my job ?</h3>
               <p>

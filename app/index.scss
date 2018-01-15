@@ -169,11 +169,12 @@ p {
 	li {
 		display: flex;
 		padding: 0 $spacing1;
-		
 		a {
+			position: relative;
+			display: block;
 			align-self: center;
+			text-align: center;
 			text-decoration: none;
-			color: $white;
 			font-family: $Nunito;
 			font-size: $text-menu;
 			font-weight: $font-bold;
@@ -183,10 +184,13 @@ p {
 }
 
 .menu__link {
-	position: relative;
-	display: block;
-	text-align: center;
 	color: $white;
+	-webkit-transition: background 0.3s, color 0.3s;
+	transition: background 0.3s, color 0.3s;
+}
+
+.menu__link2 {
+	color: $red;
 	-webkit-transition: background 0.3s, color 0.3s;
 	transition: background 0.3s, color 0.3s;
 }
