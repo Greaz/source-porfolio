@@ -653,9 +653,11 @@ p {
 				img {
 					width:100%;
 				}
-				
 			}
-			
+		}
+		p {
+			text-align: center;
+			font-size: $text-current;
 		}
 		
 		

@@ -96,6 +96,7 @@ export class Auchandirect extends React.Component {
                     <div><Image img={17} /></div>
                     <div><Image img={18} /></div>
                 </section>
+                <p>I have tried over the months to create links between the interface elements to create consistency.</p>
               </div>
             </section>
             <Footer />
