@@ -19,6 +19,10 @@ import AdiNav from "../img/others/adi-work1.jpg"
 import NewCart from "../img/others/cart.jpg"
 import AdiLoader from "../img/svg/adi-loader.svg"
 
+import AdiHistory1 from "../img/others/adi-history1.jpg"
+import AdiHistory2 from "../img/others/adi-history2.jpg"
+import AdiHistory3 from "../img/others/adi-history3.jpg"
+
 export class Image extends React.Component {
   
   renderImage(img) {
@@ -66,6 +70,15 @@ export class Image extends React.Component {
     }
     else if (img === 15) {
       return <img src={ AdiLoader } alt="Auchan:Direct new product card" />;
+    }
+    else if (img === 16) {
+      return <img src={ AdiHistory1 } alt="Auchan:Direct 2016" />;
+    }
+    else if (img === 17) {
+      return <img src={ AdiHistory2 } alt="Auchan:Direct early 2017" />;
+    }
+    else if (img === 18) {
+      return <img src={ AdiHistory3 } alt="Auchan:Direct 2017" />;
     }
     else {
       return <img src={ Default } alt="default img" />;

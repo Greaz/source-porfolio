@@ -4,6 +4,12 @@ import Image from "components/image.jsx"
 import Footer from "components/footer.jsx"
 import Work from "components/work.jsx"
 
+const workItems = [
+  {title: 'Rework how to navigate in the website', number: '1', img: 13},
+  {title: 'Rework product list and product card', number: '2', img: 14},
+  {title: 'Create a page loader full svg', number: '3', img: 15},
+];
+
 export class Auchandirect extends React.Component {
   render() {
     return (
@@ -77,9 +83,19 @@ export class Auchandirect extends React.Component {
             <section className="other-work">
               <div>  
                 <Image img={12}/>
-                <Work img={13} titre="Rework how to navigate in the website" num="1" />
-                <Work img={14} titre="Rework product list and product card" num="2" />
-                <Work img={15} titre="Create a page loader full svg" num="3" />
+                {workItems.map((workItem, index) =>
+                  <Work  key={ index } img={ workItem.img } titre={ workItem.title } num={ workItem.number } />
+                )}
+              </div>
+            </section>
+            <section className="background-grey">
+              <div>
+                <h3>Auchan:direct 2016 to now</h3>
+                <section>
+                    <div><Image img={16} /></div>
+                    <div><Image img={17} /></div>
+                    <div><Image img={18} /></div>
+                </section>
               </div>
             </section>
             <Footer />
