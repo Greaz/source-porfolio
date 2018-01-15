@@ -3,6 +3,39 @@ import Header from "components/header.jsx"
 import Footer from "components/footer.jsx"
 import Image from "components/image.jsx"
 
+const expItems = [
+  { 
+    post: 'Creative technologist •', 
+    compagny: ' Auchan:Direct', 
+    city: 'Paris - FR', 
+    date: 'May 2016 - Today'
+  },
+  { 
+    post: 'Prototyper & Interaction designer •',
+    compagny: ' Nealite',
+    city: 'Paris - FR',
+    date:'October 2014 - May 2016'
+  },
+  {
+    post: 'UI designer •',
+    compagny: ' Nealite',
+    city: 'Paris - FR',
+    date: 'October 2013 - October 2014'
+  },
+  {
+    post: 'UI designer & Motion designer •',
+    compagny: ' SF Factor',
+    city: 'Paris - FR',
+    date: 'June 2013 - September 2013'
+  },
+  {
+    post: 'Webdesigner •',
+    compagny: ' Pixel Cookers',
+    city: 'Neuville sur oise - FR',
+    date: 'July 2012 - September 2012'
+  },
+];
+
 export class About extends React.Component {
   render() {
     return (
@@ -15,7 +48,7 @@ export class About extends React.Component {
           <div className="body">
             <section>
               <h2>Rémy Saddour</h2>
-              <span className="job-title">27 ans, CREATIVE TECHNOLOGIST somethings like that…</span>
+              <span className="job-title">27 ans, CREATIVE TECHNOLOGIST</span>
               <span className="job-skills">UX, UI, PROTOTYPES, INTERACTIONS, MOTION DESIGN</span>
               <h3>What is my job ?</h3>
               <p>
@@ -24,26 +57,14 @@ export class About extends React.Component {
               <Image img={7} />
               <h3>Expériences</h3>
               <ul>
-                <li>
-                  <span><b>Creative technologist •</b> Auchan:Direct<br />Paris - FR</span>
-                  <span>May 2016 - Today</span>
-                </li>
-                <li>
-                  <span><b>Prototyper & Interaction designer •</b> Nealite<br />Paris - FR</span>
-                  <span>October 2014 - May 2016</span>
-                </li>
-                <li>
-                  <span><b>UI designer •</b> Nealite<br />Paris - FR</span>
-                  <span>October 2013 - October 2014</span>
-                </li>
-                <li>
-                  <span><b>UI designer & Motion designer •</b> SF Factory<br />Paris - FR</span>
-                  <span>June 2013 - September 2013</span>
-                </li>
-                <li>
-                  <span><b>Webdesigner •</b> Pixel Cookers<br />Neuville sur oise - FR</span>
-                  <span>July 2012 - September 2012</span>
-                </li>
+                {
+                  expItems.map((expItem, index) =>
+                    <li key={ index }>
+                      <span><b>{ expItem.post }</b>{ expItem.compagny }<br />{ expItem.city }</span>
+                      <span>{ expItem.date }</span>
+                    </li>
+                  )
+                }
               </ul>
               <h3>Education</h3>
               <ul>

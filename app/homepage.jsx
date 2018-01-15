@@ -5,6 +5,14 @@ import Footer from "components/footer.jsx"
 import Image from "components/image.jsx"
 import { Link } from 'react-router-dom'
 
+
+const caseItems = [
+  {name: 'Auchan:Direct', job: 'creative technologist', skills: 'UX, UI, PROTOTYPES, INTERACTIONS, MOTION DESIGN', img: 1},
+  {name: 'Carrefour Drive', job: 'UI/UX DESIGNER', skills: 'UX, UI, MICRO ANIMATIONS', img: 2},
+  {name: 'Planet VO2', job: 'INTERACTION DESIGNER', skills: 'INTERACTIONS, PROTOTYPES, MOTION DESIGN', img: 3},
+  {name: 'Groupama (studiant quotes)', job: 'Prototyper', skills: 'UI, INTERACTIONS, PROTOTYPES', img: 4},
+];
+
 export class Homepage extends React.Component {
   render() {
     return (
@@ -25,30 +33,17 @@ export class Homepage extends React.Component {
             </a>
           </div>
           <div className="grillCase">
-            <PreviewCase 
-              titre= "Auchan:Direct"
-              titreJob= "creative technologist"
-              sousTitre= "UX, UI, PROTOTYPES, INTERACTIONS, MOTION DESIGN"
-              img= { 1 }
-            />
-            <PreviewCase 
-              titre= "Carrefour Drive"
-              titreJob= "UI/UX DESIGNER"
-              sousTitre= "UX, UI, MICRO ANIMATIONS"
-              img= { 2 }
-            />
-            <PreviewCase 
-              titre= "Planet VO2"
-              titreJob= "INTERACTION DESIGNER"
-              sousTitre= "INTERACTIONS, PROTOTYPES, MOTION DESIGN"
-              img= { 3 }
-            />
-            <PreviewCase 
-              titre= "Groupama (studiant quotes)"
-              titreJob= "PROTOTYPER"
-              sousTitre= "UI, INTERACTIONS, PROTOTYPES"
-              img= { 4 }
-            />
+            {
+              caseItems.map((caseItem, index) =>
+                <PreviewCase
+                  key= { index } 
+                  titre= { caseItem.name }
+                  titreJob= { caseItem.job }
+                  sousTitre= { caseItem.skills }
+                  img= { caseItem.img }
+                />
+              )
+            }
           </div>
           <Footer/>
       </div>
