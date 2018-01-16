@@ -640,7 +640,7 @@ p {
 	
 	div {
 		display: flex;
-		flex-flow: row wrap;
+		flex-direction: column;
 		justify-content: space-around;
     max-width:  984px;
     margin: 0 auto;
@@ -705,8 +705,9 @@ p {
 }
 
 .adi-work {
-	max-width: 460px;
 	margin: $spacing4 0;
+	display: flex;
+	flex-direction: column;
 	
 	img {
 		width:100%;
@@ -726,11 +727,20 @@ p {
 				color: #CACBCC;
 				position: absolute;
 		    top: -24%;
-		    left: 42%;
+		    left: 48%;
 		}
 		span:last-child {
 			align-self: center;
+			font-size: $text-highlight;
+			font-weight: $font-light;
 			z-index: 1;
 		}
+	}
+}
+
+.adi-work:nth-of-type(3) {
+	img {
+		max-width: 280px;
+		align-self: center;
 	}
 }

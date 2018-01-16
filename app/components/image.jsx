@@ -16,7 +16,7 @@ import LogoPvo from "../img/svg/pvo-logo.svg"
 import LogoGroupama from "../img/svg/groupama-logo.svg"
 
 import AdiNav from "../img/others/adi-work1.jpg"
-import NewCart from "../img/others/cart.jpg"
+import NewCart from "../img/others/adi-work2.jpg"
 import AdiLoader from "../img/svg/adi-loader.svg"
 
 import AdiHistory1 from "../img/others/adi-history1.jpg"
