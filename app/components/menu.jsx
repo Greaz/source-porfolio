@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { matchPath } from 'react-router'
 
 const menuItems = [
-  {path: '/', name: 'Cases studies'},
+  {path: '/', name: 'Work'},
   {path: '/about', name: 'About me'},
 ];
 
@@ -21,7 +21,6 @@ export class Menu extends React.Component {
             to={menuItem.path}
           > 
             { menuItem.name }
-            {console.warn(this.isActive(menuItem.path))}
           </Link>
         </li>
       )
