@@ -135,7 +135,9 @@ p {
 
 .navigation {
 	width: 100%;
-	position:absolute;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0);
+	color: $white;
 	top:0;
 	left:0;
 	z-index: 2;
@@ -179,20 +181,34 @@ p {
 			font-size: $text-menu;
 			font-weight: $font-bold;
 			text-transform: uppercase;
+			-webkit-transition: background 0.3s, color 0.3s;
+			transition: background 0.3s, color 0.3s;
 		}
+	}
+}
+
+.fixed {
+	position: fixed;
+	background-color: rgba(255, 255, 255, 1);
+	color: $text-primary;
+	-webkit-transition: background 0.3s, color 0.3s;
+	transition: background 0.3s, color 0.3s;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.20);
+	
+	img {
+		color: $text-primary;
+	}
+	a {
+		color: $text-primary;
 	}
 }
 
 .menu__link {
 	color: $white;
-	-webkit-transition: background 0.3s, color 0.3s;
-	transition: background 0.3s, color 0.3s;
 }
 
 .menu__link2 {
-	color: $red;
-	-webkit-transition: background 0.3s, color 0.3s;
-	transition: background 0.3s, color 0.3s;
+	color: $red !important;
 }
 
 .header {

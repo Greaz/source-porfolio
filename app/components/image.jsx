@@ -22,67 +22,36 @@ import AdiLoader from "../img/svg/adi-loader.svg"
 import AdiHistory1 from "../img/others/adi-history1.jpg"
 import AdiHistory2 from "../img/others/adi-history2.jpg"
 import AdiHistory3 from "../img/others/adi-history3.jpg"
+import LogoDark from "../img/svg/logo-dark.svg"
+
+const Images = [
+  {name: LogoAuchan, alt: 'logo Auchan:Direct'},
+  {name: LogoCarrefour, alt: 'logo Carrefour'},
+  {name: LogoPvo, alt: 'logo Planet VO'},
+  {name: LogoGroupama, alt: 'logo Groupama'},
+  {name: Background, alt: 'svg background header'},
+  {name: Logo, alt: 'logotype'},
+  {name: About, alt: 'don"t make same mistake twice'},
+  {name: Dribbble, alt: 'dribbble icon ball'},
+  {name: Ux, alt: 'Ux case'},
+  {name: Ux2, alt: 'illustration of the situation'},
+  {name: UxResult, alt: 'results'},
+  {name: OtherWork, alt: 'Other works'},
+  {name: AdiNav, alt: 'Auchan:Direct new nav'},
+  {name: NewCart, alt: 'Auchan:Direct new product card'},
+  {name: AdiLoader, alt: 'Auchan:Direct svg loader'},
+  {name: AdiHistory1, alt: 'Auchan:Direct 2016'},
+  {name: AdiHistory2, alt: 'Auchan:Direct early 2017'},
+  {name: AdiHistory3, alt: 'Auchan:Direct 2017'},
+  {name: LogoDark, alt: 'logotype'},
+];
+
 
 export class Image extends React.Component {
   
   renderImage(img) {
-    if (img === 1) {
-      return <img src={ LogoAuchan } alt="logo Auchan:Direct" />;
-    }
-    else if (img === 2) {
-      return <img src={ LogoCarrefour } alt="logo Carrefour" />;
-    }
-    else if (img === 3) {
-      return <img src={ LogoPvo } alt="logo Planet VO" />;
-    }
-    else if (img === 4) {
-      return <img src={ LogoGroupama } alt="logo Groupama" />;
-    }
-    else if (img === 5) {
-      return <img src={ Background } alt="svg background header" />;
-    }
-    else if (img === 6) {
-      return <img src={ Logo } alt="logotype" />;
-    }
-    else if (img === 7) {
-      return <img src={ About } alt="don't make same mistake twice" />;
-    }
-    else if (img === 8) {
-      return <img src={ Dribbble } alt="dribbble ball icon" />;
-    }
-    else if (img === 9) {
-      return <img src={ Ux } alt="Ux case" />;
-    }
-    else if (img === 10) {
-      return <img src={ Ux2 } alt="illustration of the situation" />;
-    }
-    else if (img === 11) {
-      return <img src={ UxResult } alt="results" />;
-    }
-    else if (img === 12) {
-      return <img src={ OtherWork } alt="Other works" />;
-    }
-    else if (img === 13) {
-      return <img src={ AdiNav } alt="Auchan:Direct new nav" />;
-    }
-    else if (img === 14) {
-      return <img src={ NewCart } alt="Auchan:Direct new product card" />;
-    }
-    else if (img === 15) {
-      return <img src={ AdiLoader } alt="Auchan:Direct new product card" />;
-    }
-    else if (img === 16) {
-      return <img src={ AdiHistory1 } alt="Auchan:Direct 2016" />;
-    }
-    else if (img === 17) {
-      return <img src={ AdiHistory2 } alt="Auchan:Direct early 2017" />;
-    }
-    else if (img === 18) {
-      return <img src={ AdiHistory3 } alt="Auchan:Direct 2017" />;
-    }
-    else {
-      return <img src={ Default } alt="default img" />;
-    }
+    const index = img - 1;
+    return <img src={Images[index].name} alt={Images[index].alt} />;
   }
   
   render() {

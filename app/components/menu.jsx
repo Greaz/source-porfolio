@@ -7,7 +7,7 @@ const menuItems = [
   {path: '/about', name: 'About me'},
 ];
 
-const cleanURL = new RegExp('(?<=#).*$');
+const cleanURL = /([<=#]).*$/;
 
 
 export class Menu extends React.Component {
@@ -21,18 +21,19 @@ export class Menu extends React.Component {
             to={menuItem.path}
           > 
             { menuItem.name }
+            {console.warn(this.isActive(menuItem.path))}
           </Link>
         </li>
       )
     );
   }
 
-  isActive(path){
+  isActive(e){
+    const path = '#'+ e
     const url = cleanURL.exec(window.location.href);
     const urlPath = url[0];
     const match = matchPath(urlPath, { path, exact: true });
-    return match ? "menu__link2" : "menu__link";
-    
+    return match ? "menu__link2" : "menu__link";  
   }
 
   render() {
