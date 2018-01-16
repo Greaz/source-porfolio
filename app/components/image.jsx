@@ -24,6 +24,11 @@ import AdiHistory2 from "../img/others/adi-history2.jpg"
 import AdiHistory3 from "../img/others/adi-history3.jpg"
 import LogoDark from "../img/svg/logo-dark.svg"
 
+import PreviewAdi from "../img/others/adi.jpg"
+import PreviewCarrefour from "../img/others/carrefour.jpg"
+import PreviewPvo from "../img/others/pvo.jpg"
+import PreviewGroupama from "../img/others/groupama.jpg"
+
 const Images = [
   {name: LogoAuchan, alt: 'logo Auchan:Direct'},
   {name: LogoCarrefour, alt: 'logo Carrefour'},
@@ -44,20 +49,27 @@ const Images = [
   {name: AdiHistory2, alt: 'Auchan:Direct early 2017'},
   {name: AdiHistory3, alt: 'Auchan:Direct 2017'},
   {name: LogoDark, alt: 'logotype'},
+  {name: PreviewAdi, alt: 'background Auchan:Direct'},
+  {name: PreviewCarrefour, alt: 'background Carrefour'},
+  {name: PreviewGroupama, alt: 'background Groupama'},
+  {name: PreviewPvo, alt: 'background PlanetVO2'}, //21
 ];
 
 
 export class Image extends React.Component {
   
-  renderImage(img) {
+  renderImage(img, className) {
     const index = img - 1;
-    return <img src={Images[index].name} alt={Images[index].alt} />;
+    return <img className={className} src={Images[index].name} alt={Images[index].alt} />;
   }
   
   render() {
-    const { img } = this.props;
+    const { 
+      img,
+      className,
+     } = this.props;
     return (
-      this.renderImage(img)
+      this.renderImage(img, className)
     );
   }
 }

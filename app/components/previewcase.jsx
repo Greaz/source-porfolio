@@ -22,63 +22,46 @@ export class PreviewCase extends React.Component {
     }
   }
   
-  renderPreview(img) {
+  renderImg(img) {
     if (img === 1) {
-      return (
-        <div className="prev-auchan" >
-          <Image img={img} />
-          <p>Allow users to do their food shopping in less than 20 minutes.</p>
-        </div>
-      );
+      return 20;
     }
     else if (img === 2) {
-      return (
-        <div className="prev-carrefour" >
-          <Image img={img} />
-          <p>Coming soon</p>
-        </div>
-      );
+      return 21;
     }
     else if (img === 3) {
-      return (
-        <div className="prev-pvo" >
-          <Image img={img} />
-          <p>Coming soon</p>
-        </div>
-      );
+      return 23;
     }
     else if (img === 4) {
-      return (
-        <div className="prev-groupama" >
-          <Image img={img} />
-          <p>Coming soon</p>
-        </div>
-      );
+      return 22;
     }
     else {
-      return (
-        <div>
-          <Image img={img} />
-          <p>Coming soon | work in progress</p>
-        </div>
-      );
+      return console.warn("caca dans previewcase component");
     }
   }
+  
 
   render() {
     const { 
       titre,
       sousTitre,
       titreJob,
+      baseline,
       img,
      } = this.props;
     return (
       <div className="ref">
-        <Link to={ this.renderPath(img) }>
           <h3> { titre } </h3>
           <span className="job-title"> { titreJob } </span>
           <span className="job-skills"> { sousTitre } </span>
-          {this.renderPreview(img)}
+        <Link to={ this.renderPath(img) }>
+          <figure className="preview">
+            <Image className="img-case" img={this.renderImg(img)} />
+            <figcaption>
+              <Image className="logo-case" img={img} />
+              <p>{ baseline }</p>
+            </figcaption>			
+          </figure>
         </Link>
       </div>
     );
