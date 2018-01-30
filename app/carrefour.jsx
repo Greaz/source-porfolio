@@ -7,7 +7,7 @@ export class Carrefour extends React.Component {
         <div>
           <Header>
             <h1>
-              Coming soon.
+              3 months to create the new Carrefour Drive app.
             </h1>
           </Header>
           <h2> Page carrefour </h2>

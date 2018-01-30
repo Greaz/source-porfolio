@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 
 const caseItems = [
-  {name: 'Auchan:Direct', job: 'creative technologist', skills: 'UX, UI, PROTOTYPES, INTERACTIONS, MOTION DESIGN', baseline: 'Allow users to do their food shopping in less than 20 minutes.', img: 1},
+  {name: 'Auchan:Direct', job: 'UI/UX DESIGNER', skills: 'UX, UI, JAVASCRIPT, PROTOTYPES, INTERACTIONS, MOTION DESIGN', baseline: 'Allow users to do their food shopping in less than 20 minutes.', img: 1},
   {name: 'Carrefour Drive', job: 'UI/UX DESIGNER', skills: 'UX, UI, MICRO ANIMATIONS', baseline: 'Work in progress...', img: 2},
   {name: 'Planet VO2', job: 'INTERACTION DESIGNER', skills: 'INTERACTIONS, PROTOTYPES, MOTION DESIGN', baseline: 'Coming soon...', img: 3},
   {name: 'Groupama (studiant quotes)', job: 'Prototyper', skills: 'UI, INTERACTIONS, PROTOTYPES', baseline: 'Coming soon...', img: 4},
