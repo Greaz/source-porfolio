@@ -19,7 +19,7 @@ export class Homepage extends React.Component {
       <div>
           <Header>
             <h1>
-              Hello, I solve <span>problems</span> by designing <span>suitable experiences</span> for <span>the web</span> and <span>the mobile</span>.
+              Hello, I solve problems by designing <span>suitable experiences</span> for <span>the web</span> and <span>the mobile</span>.
             </h1>
           </Header>
           <div className="dribbble">

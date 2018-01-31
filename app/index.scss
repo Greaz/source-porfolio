@@ -147,13 +147,17 @@ p {
 	display: flex;
 	flex-direction: row;
 	box-sizing: border-box;
-	padding: $spacing2;
+	padding: $spacing1 $spacing1 $spacing1 $spacing2;
 	
 	div {
 		display: flex;
 	}
 	div:first-child {
 		width:33%;
+		align-content: center;
+		a {
+			display: flex;
+		}
 	}
 	div:last-child {
 		justify-content: flex-end;
@@ -174,6 +178,10 @@ p {
 	li {
 		display: flex;
 		padding: 0 $spacing1;
+		margin: 0 $spacing1;
+		transition: background 0.3s, color 0.3s;
+		border-radius: 4px;
+		height:36px;
 		a {
 			color: $text-primary;
 			position: relative;
@@ -187,6 +195,9 @@ p {
 			text-transform: uppercase;
 			transition: background 0.3s, color 0.3s;
 		}
+	}
+	li:hover {
+		background-color: #F6F6F6; // TODO
 	}
 }
 

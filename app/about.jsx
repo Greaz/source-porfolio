@@ -5,7 +5,7 @@ import Image from "components/image.jsx"
 
 const expItems = [
   { 
-    post: 'Creative technologist •', 
+    post: 'UX & UI designer •', 
     compagny: ' Auchan:Direct', 
     city: 'Paris - FR', 
     date: 'May 2016 - Today'
