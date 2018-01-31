@@ -241,6 +241,12 @@ p {
 		color: $primary;
 	}
 	
+	p {
+		padding: 0px;
+		text-transform: uppercase;
+		font-size: $text-menu;
+	}
+	
 	@media screen and (max-width: 500px) {
 		h1 {
 			font-size: $h3;
