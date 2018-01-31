@@ -22,7 +22,6 @@ import AdiLoader from "../img/svg/adi-loader.svg"
 import AdiHistory1 from "../img/others/adi-history1.jpg"
 import AdiHistory2 from "../img/others/adi-history2.jpg"
 import AdiHistory3 from "../img/others/adi-history3.jpg"
-import LogoDark from "../img/svg/logo-dark.svg"
 
 import PreviewAdi from "../img/others/adi.jpg"
 import PreviewCarrefour from "../img/others/carrefour.jpg"
@@ -48,7 +47,6 @@ const Images = [
   {name: AdiHistory1, alt: 'Auchan:Direct 2016'},
   {name: AdiHistory2, alt: 'Auchan:Direct early 2017'},
   {name: AdiHistory3, alt: 'Auchan:Direct 2017'},
-  {name: LogoDark, alt: 'logotype'},
   {name: PreviewAdi, alt: 'background Auchan:Direct'},
   {name: PreviewCarrefour, alt: 'background Carrefour'},
   {name: PreviewGroupama, alt: 'background Groupama'},

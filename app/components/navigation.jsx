@@ -34,7 +34,7 @@ export class Navigation extends React.Component {
       <nav className={this.state.class}>
         <div>
           <Link to='/'>
-            <Image img={this.state.class === "navigation" ? 6 : 19} />
+            <Image img={6} />
           </Link>
         </div>
         <Menu />

@@ -24,15 +24,15 @@ export class PreviewCase extends React.Component {
   
   renderImg(img) {
     if (img === 1) {
-      return 20;
+      return 19;
     }
     else if (img === 2) {
+      return 20;
+    }
+    else if (img === 4) {
       return 21;
     }
     else if (img === 3) {
-      return 23;
-    }
-    else if (img === 4) {
       return 22;
     }
     else {

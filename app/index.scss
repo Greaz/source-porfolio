@@ -49,7 +49,7 @@ table {
 
 // Colors
 $white: #FFFFFF;
-$background-grey: #F3F3F3;
+$background-grey: #F9F9F9;
 
 $title-grey: #CACBCC;
 $text-grey: #838791;
@@ -87,6 +87,10 @@ $spacing5: 48px;
 $spacing6: 96px;
 
 // styling site
+
+body {
+	background-color: $background-grey;
+}
 
 h2 {
   font-family: $Marker;
@@ -137,7 +141,6 @@ p {
 	width: 100%;
 	position: absolute;
 	background-color: rgba(255, 255, 255, 0);
-	color: $white;
 	top:0;
 	left:0;
 	z-index: 2;
@@ -172,6 +175,7 @@ p {
 		display: flex;
 		padding: 0 $spacing1;
 		a {
+			color: $text-primary;
 			position: relative;
 			display: block;
 			align-self: center;
@@ -189,7 +193,6 @@ p {
 .fixed {
 	position: fixed;
 	background-color: rgba(255, 255, 255, 1);
-	color: $text-primary;
 	transition: background 0.3s, color 0.3s;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.20);
 	
@@ -215,48 +218,46 @@ p {
   position: relative;
 	display: flex;
 	justify-content: center;
-	background-color: $primary;
+	background-color: $white;
   
 	div {
 		max-width: 732px;
 		padding:$spacing2;
 		margin: auto;
 	}
+	
+	h1 {
+		font-family: $Nunito;
+		font-weight: $font-light;
+		color: $primary;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+	}
+	
+	span {
+    font-weight: $font-bold;
+    text-decoration: none;
+		color: $primary;
+	}
+	
 	@media screen and (max-width: 500px) {
 		h1 {
-			font-family: $Nunito;
-			font-weight: $font-light;
 			font-size: $h3;
-			color: $white;
-			text-align: center;
-			position: relative;
-			z-index: 1;
 			line-height: 38px;
 		}
 	  span {
-	    font-weight: $font-bold;
-	    text-decoration: none;
-			color: $white;
 			font-size: $h3;
 	  }
 	}
 	@media screen and (min-width: 500px) {
 		h1 {
-			font-family: $Nunito;
-			font-weight: $font-light;
-			font-size: $h1;
-			color: $white;
-			text-align: center;
-			position: relative;
-			z-index: 1;
-			line-height: 60px;
+			line-height: 48px;
+			font-size: $h2;
 		}
 		
 	  span {
-	    font-weight: $font-bold;
-	    text-decoration: none;
-			color: $white;
-			font-size: $h1;
+			font-size: $h2;
 	  }
 	}
 	
@@ -476,7 +477,6 @@ p {
 }
 
 .situation {
-	background-color: $background-grey;
 	box-sizing: border-box;
 	padding: $spacing4 $spacing2;
 	
@@ -603,6 +603,7 @@ p {
 .other-work {
 	box-sizing: border-box;
 	padding: 0 $spacing2;
+	background-color: $white;
 	
 	img:first-child {
 		margin: $spacing5 0;
@@ -619,7 +620,6 @@ p {
 }
 
 .background-grey {
-	background-color: $background-grey;
 	box-sizing: border-box;
 	padding: $spacing4 $spacing2;
 	
